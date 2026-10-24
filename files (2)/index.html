@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UKthhrift — Men's streetwear and aesthetic outfits</title>
+<meta name="description" content="UKthhrift: boxy tees, oversized shirts, baggy denim, cargos and ready outfit combinations for young men in India.">
+<meta name="theme-color" content="#F8F5EF">
+<meta property="og:title" content="UKthhrift — Your fit, figured out">
+<meta property="og:description" content="Men's streetwear and outfit combinations.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero.jpg"><!-- replace with your own share image -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23172B3A'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%2348B0E0' font-family='Georgia'%3EU%3C/text%3E%3C/svg%3E"><!-- replace with assets/favicon.png -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announce"><p id="announce"></p></div>
+<header>
+  <div class="bar">
+    <button class="icon-btn menu" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <a class="logo" href="#top">UKthhrift</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#shop" data-filter-link="all">Shop</a>
+      <a href="#shop" data-filter-link="tees">T-Shirts</a>
+      <a href="#shop" data-filter-link="shirts">Shirts</a>
+      <a href="#shop" data-filter-link="jeans">Jeans &amp; Cargos</a>
+      <a href="#fit-edit">Outfit Combos</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" data-open="search" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+      <button class="icon-btn" data-open="drawer" aria-label="Open cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 016 0"/></svg><span class="cart-count" hidden>0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="label">Collection 01 · Sample drop</p>
+    <h1>Your fit,<br><span>figured</span><br>out.</h1>
+    <p class="lede">Boxy tees, oversized shirts and baggy denim — put together as outfits you can wear straight away.</p>
+    <div class="cta"><a class="btn" href="#shop" data-goto="#shop">Shop the drop</a><a class="btn ghost" href="#fit-edit">Explore outfits</a></div>
+  </div>
+  <div class="hero-art"><div class="h-main" id="hero-img"></div><div class="h-note">Sample imagery — replace with your campaign photos</div></div>
+</section>
+
+<section class="sec reveal" aria-labelledby="cat-h">
+  <h2 id="cat-h" class="h2">Shop by category</h2>
+  <div class="cats">
+    <button class="cat big" data-cat="tees"><span class="ci" id="cat-tees"></span><span class="ct">Boxy Tees</span></button>
+    <button class="cat" data-cat="shirts"><span class="ci" id="cat-shirts"></span><span class="ct">Oversized Shirts</span></button>
+    <button class="cat" data-cat="jeans"><span class="ci" id="cat-jeans"></span><span class="ct">Baggy Denim</span></button>
+    <button class="cat wide" data-cat="combos"><span class="ci" id="cat-combos"></span><span class="ct">Outfit Combos</span></button>
+  </div>
+</section>
+
+<section class="sec" id="shop" aria-labelledby="shop-title">
+  <div class="shop-head">
+    <div><h2 class="h2" id="shop-title">The full drop</h2><p class="meta">Demonstration inventory — products, prices and stock are samples until replaced.</p></div>
+    <label class="sortl">Sort <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="new">Newest</option></select></label>
+  </div>
+  <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</section>
+
+<section class="sec fit reveal" id="fit-edit" aria-labelledby="fe-h">
+  <div class="fit-head"><h2 class="h2 lob" id="fe-h">The Fit Edit</h2><p>Outfits built from products in the catalogue. Prices add up the items shown.</p></div>
+  <div class="combos" id="combos"></div>
+</section>
+
+<section class="sec reveal" aria-labelledby="gal-h">
+  <h2 id="gal-h" class="h2">Lookbook</h2>
+  <p class="meta">Sample editorial imagery — not customer photos.</p>
+  <div class="gallery" id="gallery"><div class="g g1"></div><div class="g g2"></div><div class="g g3"></div><div class="g g4"></div><div class="g g5"></div></div>
+</section>
+
+<section class="brand reveal" aria-labelledby="br-h">
+  <h2 id="br-h" class="lob">Your everyday fits, figured out.</h2>
+  <p>UKthhrift is built around outfits, not isolated products: easy combinations, current silhouettes and a shopping process that stays simple — pick, add, and send your order on WhatsApp.</p>
+  <div class="cta"><a class="btn" href="#shop" data-goto="#shop">See the collection</a><button class="btn ghost" data-open="sizeguide">Size guide</button></div>
+</section>
+</main>
+
+<footer>
+  <div class="f-grid">
+    <div><a class="logo" href="#top">UKthhrift</a><p>Men's streetwear and outfit combinations for young people in India.</p></div>
+    <div><h3>Shop</h3><a href="#shop" data-filter-link="tees">Boxy tees</a><a href="#shop" data-filter-link="shirts">Oversized shirts</a><a href="#shop" data-filter-link="jeans">Baggy denim</a><a href="#shop" data-filter-link="cargos">Cargos</a><a href="#fit-edit">Outfit combos</a></div>
+    <div><h3>Help</h3><a class="wa-link" href="#" target="_blank" rel="noopener">WhatsApp</a><a id="ig" href="#" target="_blank" rel="noopener">Instagram</a><button class="link" data-open="sizeguide">Size guide</button><a href="#" data-policy="privacy">Privacy Policy</a><a href="#" data-policy="terms">Terms and Conditions</a><a href="#" data-policy="shipping">Shipping Policy</a><a href="#" data-policy="returns">Returns and Refund Policy</a></div>
+  </div>
+  <p class="copy">© <span id="year"></span> UKthhrift. Prototype storefront — orders are handled manually via WhatsApp.</p>
+</footer>
+
+<!-- Search -->
+<div class="layer top" id="search" hidden role="dialog" aria-modal="true" aria-label="Search"><form class="searchbox" id="search-form"><label for="search-input" class="sr">Search products</label><input id="search-input" type="search" placeholder="Search tees, denim, cargos…" autocomplete="off"><button class="btn" type="submit">Search</button><button type="button" class="icon-btn" data-close aria-label="Close search">✕</button></form></div>
+
+<!-- Cart drawer -->
+<div class="layer side" id="drawer" hidden role="dialog" aria-modal="true" aria-label="Cart"><aside class="drawer">
+  <div class="dh"><h2>Your cart</h2><button class="icon-btn" data-close aria-label="Close cart">✕</button></div>
+  <div id="cart-items" class="dbody"></div>
+  <div id="cart-foot" class="dfoot" hidden><div class="rl"><span>Subtotal</span><b id="cart-sub"></b></div><p class="meta">Shipping charges, if applicable, will be confirmed before order acceptance.</p><button class="btn full" id="to-checkout">Proceed to checkout</button><button class="link" id="clear-cart">Clear cart</button></div>
+</aside></div>
+
+<!-- Product -->
+<div class="layer" id="product" hidden role="dialog" aria-modal="true" aria-labelledby="pm-title"><div class="modal wide-m"><button class="icon-btn x" data-close aria-label="Close">✕</button><div class="pm" id="product-body"></div></div></div>
+
+<!-- Checkout -->
+<div class="layer" id="checkout" hidden role="dialog" aria-modal="true" aria-label="Checkout"><div class="modal"><button class="icon-btn x" data-close aria-label="Close">✕</button>
+  <div class="cv" data-v="form"><h2>Delivery details</h2><p class="meta">We only ask for what delivery needs. Never share card details or a UPI PIN.</p>
+    <form id="cform" novalidate>
+      <div class="fg"><label for="f-name">Full name *</label><input id="f-name" autocomplete="name"><div class="err" id="e-name"></div></div>
+      <div class="fg"><label for="f-phone">Mobile number *</label><input id="f-phone" type="tel" inputmode="numeric" autocomplete="tel"><div class="err" id="e-phone"></div></div>
+      <div class="fg"><label for="f-house">House / flat number *</label><input id="f-house" autocomplete="address-line1"><div class="err" id="e-house"></div></div>
+      <div class="fg"><label for="f-street">Street and locality *</label><input id="f-street" autocomplete="address-line2"><div class="err" id="e-street"></div></div>
+      <div class="two"><div class="fg"><label for="f-city">City *</label><input id="f-city" autocomplete="address-level2"><div class="err" id="e-city"></div></div><div class="fg"><label for="f-state">State *</label><input id="f-state" autocomplete="address-level1"><div class="err" id="e-state"></div></div></div>
+      <div class="fg"><label for="f-pin">PIN code *</label><input id="f-pin" inputmode="numeric" maxlength="6" autocomplete="postal-code"><div class="err" id="e-pin"></div></div>
+      <div class="fg"><label for="f-landmark">Landmark (optional)</label><input id="f-landmark"></div>
+      <div class="fg"><label for="f-notes">Order notes (optional)</label><textarea id="f-notes" rows="2"></textarea></div>
+      <button class="btn full" type="submit">Review order</button><button type="button" class="link" id="edit-cart">Back to cart</button>
+    </form></div>
+  <div class="cv" data-v="review" hidden><h2>Review your order</h2><div id="review"></div>
+    <div class="note" id="wa-note" hidden></div>
+    <button class="btn full" id="wa-confirm">Confirm &amp; checkout on WhatsApp</button><button class="btn ghost full" id="show-pay">Payment QR &amp; instructions</button><button class="link" id="edit-details">Edit details</button></div>
+  <div class="cv" data-v="pay" hidden><h2>Payment information</h2>
+    <div class="qr" id="qr"></div><p id="upi"></p>
+    <ul class="plain"><li>Scan with any UPI app that supports QR payments.</li><li>Check the recipient name and the amount before you pay.</li><li>Share payment confirmation only in the order conversation on WhatsApp (mention your order reference).</li><li>Payment is verified manually by UKthhrift outside this website. This site never marks an order as paid.</li></ul>
+    <p class="meta">QR file: <code>assets/payment/ukthhrift-payment-qr.png</code> — replace it with your own QR image.</p>
+    <button class="btn full" id="wa-pay">Continue to WhatsApp</button><button class="link" id="back-review">Back to order review</button></div>
+</div></div>
+
+<!-- Size guide -->
+<div class="layer" id="sizeguide" hidden role="dialog" aria-modal="true" aria-labelledby="sg-t"><div class="modal"><button class="icon-btn x" data-close aria-label="Close">✕</button>
+  <h2 id="sg-t">Size guide</h2><p class="warn">Illustrative sample measurements. Replace with your actual garment measurements before launch.</p>
+  <div class="tw"><table><caption>T-shirts &amp; shirts (cm, flat garment)</caption><thead><tr><th>Size</th><th>Chest</th><th>Length</th><th>Shoulder</th></tr></thead><tbody><tr><td>S</td><td>56</td><td>68</td><td>50</td></tr><tr><td>M</td><td>58</td><td>70</td><td>52</td></tr><tr><td>L</td><td>60</td><td>72</td><td>54</td></tr><tr><td>XL</td><td>62</td><td>74</td><td>56</td></tr></tbody></table></div>
+  <p class="meta">Compare these with a garment you already own and like. Check the measurements before ordering — S/M/L labels alone don't guarantee fit.</p></div></div>
+
+<!-- Policy placeholder -->
+<div class="layer" id="policy" hidden role="dialog" aria-modal="true" aria-labelledby="policy-title"><div class="modal"><button class="icon-btn x" data-close aria-label="Close">✕</button>
+  <h2 id="policy-title">Policy</h2><p class="warn">Draft placeholder — not an official policy.</p><p>The owner must write and review this policy before launch. No shipping, return, exchange, refund or privacy terms are promised on this site until then.</p></div></div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
